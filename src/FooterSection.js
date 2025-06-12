@@ -17,6 +17,7 @@ const FooterSection = () => {
         </div>
 
         <p className="footer-note">© 2025 Cocktail Gallery. All rights reserved.</p>
+        <a className="git" href="https://github.com/keerthana1065/cocktail_api_app">View Source on GitHub</a>
       </div>
     </footer>
   );
