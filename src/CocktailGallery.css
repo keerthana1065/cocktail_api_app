@@ -1,0 +1,142 @@
+.cocktail-gallery {
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cocktail-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cocktail-card {
+  width: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #cd0cba;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.cocktail-card img {
+  width: 100%;
+  display: block;
+  animation: fadeIn 1s ease forwards;
+}
+
+.cocktail-card p {
+  margin: 8px 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cocktail-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff4081;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cocktail-gallery {
+  padding: 20px;
+  text-align: center;
+  background-color: #3bd5d0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cocktail-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cocktail-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.cocktail-card {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  animation: slideIn 1s ease-in-out;
+}
+
+.cocktail-card:nth-child(1) {
+  background-color: #e3f2fd; /* Light Blue */
+}
+
+.cocktail-card:nth-child(2) {
+  background-color: #fff3e0; /* Light Orange */
+}
+
+.cocktail-card:nth-child(3) {
+  background-color: #f3e5f5; /* Light Purple */
+}
+
+.cocktail-card:nth-child(4) {
+  background-color: #e8f5e9; /* Light Green */
+}
+
+.cocktail-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.cocktail-card p {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.description {
+  padding: 0 10px 10px;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.cocktail-card:hover .description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.cocktail-card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
